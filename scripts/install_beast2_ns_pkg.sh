@@ -12,7 +12,7 @@
 #
 #
 cat R/*.R > install_beast2_ns_pkg.R
-echo 'install_beast2_ns_pkg("NS")' >> install_beast2_ns_pkg.R
+echo 'install_beast2_pkg("NS")' >> install_beast2_ns_pkg.R
 sed -i'.orginal' "s/mauricerinstall:://g" install_beast2_ns_pkg.R
 cat install_beast2_ns_pkg.R
 Rscript install_beast2_ns_pkg.R
