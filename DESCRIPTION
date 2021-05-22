@@ -17,7 +17,7 @@ RoxygenNote: 7.1.1
 Imports:
     beastier (>= 2.4),
     curl,
-    mauricer,
+    mauricer (>= 2.5),
     stringr
 Suggests:
     beautier (>= 2.5.2),
