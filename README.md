@@ -13,6 +13,7 @@ Related packages:
  * [babette](https://github.com/ropensci/babette) do a full BEAST2 workflow.
  * [beautier](https://github.com/ropensci/beautier) creates BEAST2 input (`.xml`) files.
  * [beastier](https://github.com/ropensci/beastier) runs BEAST2
+ * [beastierinstall](https://github.com/richelbilderbeek/beastierinstall) installs BEAST2
  * [mauricer](https://github.com/ropensci/mauricer) work with BEAST2 packages
  * [tracerer](https://github.com/ropensci/tracerer) parses BEAST2 output (`.log`, `.trees`, etc) files.
 
