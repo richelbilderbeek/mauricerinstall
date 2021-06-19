@@ -2,3 +2,5 @@
 ^\.Rproj\.user$
 ^LICENSE$
 ^\.github$
+^appveyor\.yml$
+^scripts$
