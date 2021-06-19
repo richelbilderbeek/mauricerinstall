@@ -24,6 +24,7 @@ environment:
 
 build_script:
   - travis-tool.sh install_github ropensci/mauricer
+  - travis-tool.sh install_github richelbilderbeek/beastierinstall
   - travis-tool.sh install_deps
 
 test_script:
