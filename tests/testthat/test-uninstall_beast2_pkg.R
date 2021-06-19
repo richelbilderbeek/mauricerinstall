@@ -1,14 +1,5 @@
 test_that("cannot uninstall absent package", {
-
-  if (!beastier::is_beast2_installed()) return()
-  if (!curl::has_internet()) return()
-
-  df <- mauricer::get_beast2_pkg_names()
-  absent_package_name <- df[df$installed_version == "NA", ]$name[1]
-  expect_error(
-    uninstall_beast2_pkg(absent_package_name),
-    "Cannot uninstall absent package"
-  )
+  # Move to test-install_beast2_pkg to limit BEAST2 downloads
 })
 
 test_that("abuse", {
@@ -22,31 +13,13 @@ test_that("abuse", {
   )
 })
 
-test_that("uninstall must be silent", {
-
-  if (!beastier::is_beast2_installed()) return()
-  if (!curl::has_internet()) return()
-
-  beast2_folder <- tempfile()
-  beastierinstall::install_beast2(folder_name = beast2_folder)
-  df <- mauricer::get_beast2_pkg_names(beast2_folder = beast2_folder)
-  name <- df[df$installed_version == "NA", ]$name[1]
-  expect_silent(install_beast2_pkg(name = name, beast2_folder = beast2_folder))
-  expect_silent(
-    uninstall_beast2_pkg(name = name, beast2_folder = beast2_folder)
-  )
-})
-
 test_that("uninstall can be verbose", {
-
-  if (!beastier::is_beast2_installed()) return()
   if (!curl::has_internet()) return()
-
-  beast2_folder <- tempfile()
+  beast2_folder <- beastier::get_beastier_tempfilename()
   beastierinstall::install_beast2(folder_name = beast2_folder)
   df <- mauricer::get_beast2_pkg_names(beast2_folder = beast2_folder)
   name <- df[df$installed_version == "NA", ]$name[1]
-  expect_silent(install_beast2_pkg(name = name, beast2_folder = beast2_folder))
+  install_beast2_pkg(name = name, beast2_folder = beast2_folder)
   expect_message(
     uninstall_beast2_pkg(
       name = name,
@@ -55,4 +28,5 @@ test_that("uninstall can be verbose", {
     ),
     "Uninstalling BEAST2 package"
   )
+  unlink(beast2_folder, recursive = TRUE)
 })
