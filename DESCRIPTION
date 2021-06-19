@@ -31,3 +31,4 @@ VignetteBuilder: knitr
 URL: https://github.com/richelbilderbeek/mauricerinstall/
 BugReports: https://github.com/richelbilderbeek/mauricerinstall/issues
 SystemRequirements: BEAST2 (https://www.beast2.org/)
+
