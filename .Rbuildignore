@@ -4,3 +4,5 @@
 ^\.github$
 ^appveyor\.yml$
 ^scripts$
+^NEWS\.md$
+
