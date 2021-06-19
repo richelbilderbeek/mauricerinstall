@@ -1,9 +1,9 @@
 # mauricerinstall
 
-Branch   |[![GitHub Actions logo](man/figures/GitHubActions.png)](https://github.com/ropensci/mauricerinstall/actions)|[![Codecov logo](man/figures/Codecov.png)](https://www.codecov.io)
+Branch   |[![GitHub Actions logo](man/figures/GitHubActions.png)](https://github.com/richelbilderbeek/mauricerinstall/actions)|[![Codecov logo](man/figures/Codecov.png)](https://www.codecov.io)
 ---------|------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------
-`master` |![R-CMD-check](https://github.com/ropensci/mauricerinstall/workflows/R-CMD-check/badge.svg?branch=master)   |[![codecov.io](https://codecov.io/github/ropensci/mauricerinstall/coverage.svg?branch=master)](https://codecov.io/github/ropensci/mauricerinstall/branch/master)
-`develop`|![R-CMD-check](https://github.com/ropensci/mauricerinstall/workflows/R-CMD-check/badge.svg?branch=develop)  |[![codecov.io](https://codecov.io/github/ropensci/mauricerinstall/coverage.svg?branch=develop)](https://codecov.io/github/ropensci/mauricerinstall/branch/develop)
+`master` |![R-CMD-check](https://github.com/richelbilderbeek/mauricerinstall/workflows/R-CMD-check/badge.svg?branch=master)   |[![codecov.io](https://codecov.io/github/richelbilderbeek/mauricerinstall/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/mauricerinstall/branch/master)
+`develop`|![R-CMD-check](https://github.com/richelbilderbeek/mauricerinstall/workflows/R-CMD-check/badge.svg?branch=develop)  |[![codecov.io](https://codecov.io/github/richelbilderbeek/mauricerinstall/coverage.svg?branch=develop)](https://codecov.io/github/richelbilderbeek/mauricerinstall/branch/develop)
 
 Install BEAST2 packages for [mauricer](https://github.com/ropensci/mauricer), 
 a sub-package of [babette](https://github.com/ropensci/babette).
