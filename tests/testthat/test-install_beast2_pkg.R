@@ -1,5 +1,6 @@
 test_that("use", {
   if (!curl::has_internet()) return()
+  if (!beastier::is_beast2_installed()) return()
 
   # Multiple tests, to limit the number of BEAST2 downloads
   beast2_folder <- beastier::get_beastier_tempfilename()
@@ -17,7 +18,12 @@ test_that("use", {
   expect_silent(
     install_beast2_pkg(name = name, beast2_folder = beast2_folder)
   )
-  expect_true(mauricer::is_beast2_pkg_installed(name = name, beast2_folder = beast2_folder))
+  expect_true(
+    mauricer::is_beast2_pkg_installed(
+      name = name,
+      beast2_folder = beast2_folder
+    )
+  )
 
   expect_error(
     install_beast2_pkg(name = name, beast2_folder = beast2_folder),
@@ -29,7 +35,12 @@ test_that("use", {
   expect_silent(
     uninstall_beast2_pkg(name = name, beast2_folder = beast2_folder)
   )
-  expect_false(mauricer::is_beast2_pkg_installed(name = name , beast2_folder = beast2_folder))
+  expect_false(
+    mauricer::is_beast2_pkg_installed(
+      name = name,
+      beast2_folder = beast2_folder
+    )
+  )
 
   expect_error(
     uninstall_beast2_pkg(name = name, beast2_folder = beast2_folder),

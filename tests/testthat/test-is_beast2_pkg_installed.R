@@ -19,4 +19,3 @@ test_that("install new package at non-standard location", {
     )
   )
 })
-
