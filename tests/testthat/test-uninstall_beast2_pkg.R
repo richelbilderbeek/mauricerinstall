@@ -15,6 +15,7 @@ test_that("abuse", {
 
 test_that("uninstall can be verbose", {
   if (!curl::has_internet()) return()
+  if (!beastier::is_beast2_installed()) return()
   beast2_folder <- beastier::get_beastier_tempfilename()
   beastierinstall::install_beast2(folder_name = beast2_folder)
   df <- mauricer::get_beast2_pkg_names(beast2_folder = beast2_folder)

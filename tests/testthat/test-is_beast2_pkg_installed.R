@@ -1,6 +1,6 @@
 test_that("install new package at non-standard location", {
 
-  if (!beastier::is_on_ci()) return()
+  if (!beautier::is_on_ci()) return()
   if (!curl::has_internet()) return()
 
   beast2_folder <- tempfile()
@@ -14,7 +14,7 @@ test_that("install new package at non-standard location", {
   )
   expect_true(
     mauricer::is_beast2_pkg_installed(
-      name = name, 
+      name = name,
       beast2_folder = beast2_folder
     )
   )
