@@ -13,7 +13,7 @@ Description: 'BEAST2' (<https://www.beast2.org>) is a widely used
     This package allows to install 'BEAST2' packages from 'R'.
 License: GPL-3
 Encoding: UTF-8
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.1
 Imports:
     beastier (>= 2.4),
     curl,
@@ -31,4 +31,3 @@ VignetteBuilder: knitr
 URL: https://github.com/richelbilderbeek/mauricerinstall/
 BugReports: https://github.com/richelbilderbeek/mauricerinstall/issues
 SystemRequirements: BEAST2 (https://www.beast2.org/)
-

@@ -2,6 +2,7 @@ test_that("install new package at non-standard location", {
 
   if (!beautier::is_on_ci()) return()
   if (!curl::has_internet()) return()
+  if (!beastier::is_beast2_installed()) return()
 
   beast2_folder <- tempfile()
   beastierinstall::install_beast2(folder_name = beast2_folder)
