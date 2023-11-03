@@ -20,7 +20,7 @@ Imports:
     mauricer (>= 2.5),
     stringr
 Suggests:
-    beautier (>= 2.6.2),
+    beautier (>= 2.6.11),
     beastierinstall,
     knitr,
     markdown,
