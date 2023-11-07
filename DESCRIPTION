@@ -15,7 +15,7 @@ License: GPL-3
 Encoding: UTF-8
 RoxygenNote: 7.2.1
 Imports:
-    beastier (>= 2.4),
+    beastier (>= 2.5),
     curl,
     mauricer (>= 2.5),
     stringr
