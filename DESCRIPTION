@@ -3,7 +3,7 @@ Type: Package
 Title: Install 'BEAST2' Packages
 Version: 1.0
 Author: Richèl J.C. Bilderbeek
-Maintainer: Richèl J.C. Bilderbeek <richel@richelbilderbeek.nl>
+Maintainer: Richèl J.C. Bilderbeek <rjcbilderbeek@gmail.com>
 Description: 'BEAST2' (<https://www.beast2.org>) is a widely used
     Bayesian phylogenetic tool, that uses DNA/RNA/protein data
     and many model priors to create a posterior of jointly estimated 
